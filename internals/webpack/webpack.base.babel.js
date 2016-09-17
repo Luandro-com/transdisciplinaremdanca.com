@@ -9,6 +9,7 @@ const webpack = require('webpack');
 const cssnext = require('postcss-cssnext');
 const postcssFocus = require('postcss-focus');
 const postcssReporter = require('postcss-reporter');
+const theme = require('postcss-theme');
 
 module.exports = (options) => ({
   entry: options.entry,
@@ -78,6 +79,9 @@ module.exports = (options) => ({
     }),
     postcssReporter({ // Posts messages from plugins to the terminal
       clearMessages: true,
+    }),
+    theme({
+      themePath: '../../theme',
     }),
   ],
   resolve: {

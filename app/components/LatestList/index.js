@@ -52,6 +52,13 @@ LatestList.defaultProps = {
       media: '',
       created: '',
     },
+    // {
+    //   id: '003',
+    //   title: 'Carregando...',
+    //   category: 'Media',
+    //   media: '',
+    //   created: '',
+    // },
   ],
 };
 

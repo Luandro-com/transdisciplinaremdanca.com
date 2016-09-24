@@ -1,7 +1,13 @@
 .wrapper {
-
+  background: pink;
+  height: 60px;
+  width: 60px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 70px;
+  right: 10px;
 }
 
 .container {
-  
+
 }

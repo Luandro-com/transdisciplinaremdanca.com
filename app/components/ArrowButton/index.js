@@ -6,15 +6,14 @@
 
 import React from 'react';
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+// import { FormattedMessage } from 'react-intl';
+// import messages from './messages';
 
 import styles from './styles.css';
 
 function ArrowButton() {
   return (
-    <div className={styles.arrowButton}>
-      <FormattedMessage {...messages.header} />
+    <div className={styles.wrapper}>
     </div>
   );
 }

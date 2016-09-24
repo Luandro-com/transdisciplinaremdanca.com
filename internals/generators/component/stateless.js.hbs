@@ -29,4 +29,8 @@ function {{ properCase name }}() {
   );
 }
 
+{{ properCase name }}.propTypes = {
+  data: React.PropTypes.string.isRequired,
+};
+
 export default {{ properCase name }};

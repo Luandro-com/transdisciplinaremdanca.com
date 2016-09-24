@@ -17,7 +17,7 @@ const logger = {
 
   // Called when express.js app starts on given port w/o errors
   appStarted: (port, tunnelStarted) => {
-    console.log(`Server started ${chalk.green('✓')}`);
+    console.log(`${chalk.cyan('Transdiciplar em Dança ')} Server started ${chalk.green('✓')}`);
 
     // If the tunnel started, log that and the URL it's available at
     if (tunnelStarted) {

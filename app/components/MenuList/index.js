@@ -5,22 +5,29 @@
 */
 
 import React from 'react';
+import Loader from 'halogen/ScaleLoader';
+// import { FormattedMessage } from 'react-intl';
+// import messages from './messages';
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+import Item from 'components/MenuItem';
 
 import styles from './styles.css';
 
-function MenuList() {
+function MenuList({ categories }) {
   return (
     <div className={styles.menuList}>
-      <FormattedMessage {...messages.header} />
+      {(!categories || categories.length < 1) &&
+        <Loader color={'pink'} />
+      }
+      {(categories && categories.length > 0) &&
+        categories.map(item => <Item key={item.id} {...item} />)
+      }
     </div>
   );
 }
 
 MenuList.propTypes = {
-  data: React.PropTypes.string.isRequired,
+  categories: React.PropTypes.array,
 };
 
 export default MenuList;

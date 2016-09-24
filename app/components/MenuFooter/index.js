@@ -13,14 +13,15 @@ import styles from './styles.css';
 
 function MenuFooter() {
   return (
-    <div className={styles.menuFooter}>
+    <footer className={styles.wrapper}>
       <FormattedMessage {...messages.header} />
-    </div>
+      <h4>por Luandro</h4>
+    </footer>
   );
 }
 
 MenuFooter.propTypes = {
-  data: React.PropTypes.string.isRequired,
+  data: React.PropTypes.string,
 };
 
 export default MenuFooter;

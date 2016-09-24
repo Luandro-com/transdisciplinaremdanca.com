@@ -8,6 +8,6 @@ import { defineMessages } from 'react-intl';
 export default defineMessages({
   header: {
     id: 'app.components.Logo.header',
-    defaultMessage: 'This is the Logo component !',
+    defaultMessage: 'Grupo Transdisciplinar em Dança',
   },
 });

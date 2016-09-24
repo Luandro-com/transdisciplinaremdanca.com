@@ -1,6 +1,6 @@
 /**
 *
-* Logo
+* HomeScreen
 *
 */
 
@@ -11,16 +11,16 @@ import messages from './messages';
 
 import styles from './styles.css';
 
-function Logo() {
+function HomeScreen() {
   return (
-    <div className={styles.logo}>
-      <h1><FormattedMessage {...messages.header} /></h1>
+    <div className={styles.homeScreen}>
+      <FormattedMessage {...messages.header} />
     </div>
   );
 }
 
-Logo.propTypes = {
+HomeScreen.propTypes = {
   data: React.PropTypes.string,
 };
 
-export default Logo;
+export default HomeScreen;

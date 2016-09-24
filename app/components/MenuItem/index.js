@@ -6,21 +6,21 @@
 
 import React from 'react';
 
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
+// import { FormattedMessage } from 'react-intl';
+// import messages from './messages';
 
 import styles from './styles.css';
 
-function MenuItem() {
+function MenuItem({ title }) {
   return (
     <div className={styles.menuItem}>
-      <FormattedMessage {...messages.header} />
+      {title}
     </div>
   );
 }
 
 MenuItem.propTypes = {
-  data: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string.isRequired,
 };
 
 export default MenuItem;

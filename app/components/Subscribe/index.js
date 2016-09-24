@@ -15,12 +15,13 @@ function Subscribe() {
   return (
     <div className={styles.subscribe}>
       <FormattedMessage {...messages.header} />
+      <input />
     </div>
   );
 }
 
 Subscribe.propTypes = {
-  data: React.PropTypes.string.isRequired,
+  data: React.PropTypes.string,
 };
 
 export default Subscribe;

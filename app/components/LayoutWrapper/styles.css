@@ -4,6 +4,9 @@
   width: 100%;
 }
 
-.container {
-
+@media (min-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+    }
 }

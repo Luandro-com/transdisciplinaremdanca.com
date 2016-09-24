@@ -19,7 +19,7 @@
 
 import React from 'react';
 import LayoutWrapper from 'components/LayoutWrapper';
-
+import Menu from 'containers/Menu';
 import styles from './styles.css';
 
 export default class App extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -32,6 +32,7 @@ export default class App extends React.Component { // eslint-disable-line react/
     return (
       <div className={styles.wrapper}>
         <LayoutWrapper>
+          <Menu />
           {React.Children.toArray(this.props.children)}
         </LayoutWrapper>
       </div>

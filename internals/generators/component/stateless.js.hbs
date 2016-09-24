@@ -18,7 +18,7 @@ import styles from './styles.css';
 function {{ properCase name }}() {
   return (
     {{#if wantCSS}}
-    <div className={{curly true}}styles.{{ camelCase name }}{{curly}}>
+    <div className={{curly true}}styles.wrapper{{curly}}>
     {{else}}
     <div>
     {{/if}}
@@ -30,7 +30,7 @@ function {{ properCase name }}() {
 }
 
 {{ properCase name }}.propTypes = {
-  data: React.PropTypes.string.isRequired,
+  data: React.PropTypes.string,
 };
 
 export default {{ properCase name }};

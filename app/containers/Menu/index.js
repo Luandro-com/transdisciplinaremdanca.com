@@ -8,12 +8,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import selectMenu from './selectors';
 
+import MenuLayout from 'components/MenuLayout';
+
 export class Menu extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
-    return (
-      <div>
-      </div>
-    );
+    return <MenuLayout {...this.props} />;
   }
 }
 

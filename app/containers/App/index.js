@@ -2,6 +2,8 @@
  *
  * App.react.js
  *
+ * by Luandro | 2016
+ *
  * This component is the skeleton around the actual pages, and should only
  * contain code that should be seen on all pages. (e.g. navigation bar)
  *
@@ -11,7 +13,12 @@
  * the linting exception.
  */
 
+/**
+ * TODO: Create/control state for color animation over time.
+ */
+
 import React from 'react';
+import LayoutWrapper from 'components/LayoutWrapper';
 
 import styles from './styles.css';
 
@@ -23,8 +30,10 @@ export default class App extends React.Component { // eslint-disable-line react/
 
   render() {
     return (
-      <div className={styles.container}>
-        {React.Children.toArray(this.props.children)}
+      <div className={styles.wrapper}>
+        <LayoutWrapper>
+          {React.Children.toArray(this.props.children)}
+        </LayoutWrapper>
       </div>
     );
   }

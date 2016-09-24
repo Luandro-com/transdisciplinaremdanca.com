@@ -1,7 +1,20 @@
 .wrapper {
-
+  background: black;
 }
 
 .container {
-  
+
+}
+
+.logo {
+  display: block;
+}
+
+@media (min-width: 768px) {
+    .wrapper {
+      height: 70vh;
+    }
+    .logo {
+      display: none;
+    }
 }

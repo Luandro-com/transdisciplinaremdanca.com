@@ -9,12 +9,17 @@ import React from 'react';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
+import Logo from 'components/Logo';
+
 import styles from './styles.css';
 
 function HomeScreen() {
   return (
-    <div className={styles.homeScreen}>
+    <div className={styles.wrapper}>
       <FormattedMessage {...messages.header} />
+      <div className={styles.logo}>
+        <Logo />
+      </div>
     </div>
   );
 }

@@ -12,11 +12,12 @@ import selectHomePage from './selectors';
 // import messages from './messages';
 
 import HomeScreen from 'components/HomeScreen';
+import LatestPosts from 'containers/LatestPosts';
 
 export class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <div style={{ width: '100%', maxHeigth: '100vh' }}>
         <Helmet
           title={'Início'}
           meta={[
@@ -24,6 +25,7 @@ export class HomePage extends React.Component { // eslint-disable-line react/pre
           ]}
         />
         <HomeScreen />
+        <LatestPosts />
       </div>
     );
   }

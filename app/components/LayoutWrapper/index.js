@@ -7,6 +7,8 @@
 
 import React from 'react';
 
+import Decorator from 'components/Decorations';
+
 import styles from './styles.css';
 
 class LayoutWrapper extends React.Component { // eslint-disable-line react/prefer-stateless-function
@@ -18,6 +20,7 @@ class LayoutWrapper extends React.Component { // eslint-disable-line react/prefe
   render() {
     return (
       <div className={styles.wrapper}>
+        <Decorator />
         {React.Children.toArray(this.props.children)}
       </div>
     );

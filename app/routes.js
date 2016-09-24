@@ -38,7 +38,7 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
-      path: '/categorias',
+      path: '/c/:slug',
       name: 'categoryPage',
       getComponent(nextState, cb) {
         const importModules = Promise.all([

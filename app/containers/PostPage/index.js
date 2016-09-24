@@ -11,16 +11,18 @@ import selectPostPage from './selectors';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
 
+import styles from './styles.css';
+
 export class PostPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
-      <Helmet
-        title="PostPage"
-        meta={[
-          { name: 'description', content: 'Description of PostPage' },
-        ]}
-      />
+      <div className={styles.wrapper}>
+        <Helmet
+          title="PostPage"
+          meta={[
+            { name: 'description', content: 'Description of PostPage' },
+          ]}
+        />
         <FormattedMessage {...messages.header} />
       </div>
     );

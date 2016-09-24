@@ -14,10 +14,12 @@ import selectHomePage from './selectors';
 import HomeScreen from 'components/HomeScreen';
 import LatestPosts from 'containers/LatestPosts';
 
+import styles from './styles.css';
+
 export class HomePage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div style={{ width: '100%', maxHeigth: '100vh' }}>
+      <div className={styles.wrapper}>
         <Helmet
           title={'Início'}
           meta={[

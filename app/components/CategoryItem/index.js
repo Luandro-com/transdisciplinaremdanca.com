@@ -11,16 +11,17 @@ import messages from './messages';
 
 import styles from './styles.css';
 
-function CategoryItem() {
+function CategoryItem({ title }) {
   return (
     <div className={styles.categoryItem}>
       <FormattedMessage {...messages.header} />
+      {title}
     </div>
   );
 }
 
 CategoryItem.propTypes = {
-  data: React.PropTypes.string.isRequired,
+  title: React.PropTypes.string,
 };
 
 export default CategoryItem;

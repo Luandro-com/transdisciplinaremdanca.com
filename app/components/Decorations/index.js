@@ -26,8 +26,4 @@ function Decorations() {
   );
 }
 
-Decorations.propTypes = {
-  data: React.PropTypes.string.isRequired,
-};
-
 export default Decorations;

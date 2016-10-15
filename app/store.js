@@ -6,8 +6,12 @@ import { createStore, applyMiddleware, compose } from 'redux';
 import { fromJS } from 'immutable';
 import { routerMiddleware } from 'react-router-redux';
 import createSagaMiddleware from 'redux-saga';
+import Kasia from 'kasia';
+import wpapi from 'wpapi';
 import createReducer from './reducers';
 
+// const WP = new wpapi({ endpoint: 'http://local.wordpress.dev/wp-json' });
+// export const { kasiaReducer, kasiaSagas } = new Kasia({ WP });
 const sagaMiddleware = createSagaMiddleware();
 const devtools = window.devToolsExtension || (() => noop => noop);
 
@@ -30,6 +34,12 @@ export default function configureStore(initialState = {}, history) {
     fromJS(initialState),
     compose(...enhancers)
   );
+
+  // const rootSaga = function* () {
+  //   yield [...kasiaSagas];
+  // };
+  //
+  // sagaMiddleware.run(rootSaga);
 
   // Create hook for async sagas
   store.runSaga = sagaMiddleware.run;

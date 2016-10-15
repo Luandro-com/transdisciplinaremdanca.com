@@ -9,7 +9,7 @@ import { LOCATION_CHANGE } from 'react-router-redux';
 import languageProviderReducer from 'containers/LanguageProvider/reducer';
 import menuReducer from 'containers/Menu/reducer';
 import latestPostsReducer from 'containers/LatestPosts/reducer';
-
+// import { kasiaReducer } from './store';
 
 /*
  * routeReducer
@@ -43,11 +43,13 @@ function routeReducer(state = routeInitialState, action) {
  * Creates the main reducer with the asynchronously loaded ones
  */
 export default function createReducer(asyncReducers) {
+  // console.log(kasiaReducer);
   return combineReducers({
     route: routeReducer,
     language: languageProviderReducer,
     latestPosts: latestPostsReducer,
     menu: menuReducer,
+    // ...kasiaReducer,
     ...asyncReducers,
   });
 }

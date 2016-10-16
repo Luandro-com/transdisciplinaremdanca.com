@@ -1,6 +1,8 @@
 .wrapper {
   background: black;
   color: #fff;
+  background: url('./background.jpg');
+  background-size: cover;
 }
 
 .container {

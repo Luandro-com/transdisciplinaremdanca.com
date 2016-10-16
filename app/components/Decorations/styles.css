@@ -1,13 +1,48 @@
+:root {
+  --menu: 256px;
+}
+
 .wrapper {
-  position: fixed;
-  height: 80%;
   z-index: 99;
+  width: 1px;
 }
 
 .left, .right {
-  height: 100%;
+  position: fixed;
+  top: 40px;
+  width: 15px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.right {
+  right: 4px;
 }
 
 .d1, .d2, .d3 {
-  border-right: 1px solid pink;
+  position: relative;
+  width: 1px;
+  background-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+}
+
+.d1 {
+  height: 50vh;
+  top: 0;
+}
+
+.d2 {
+  height: 35vh;
+  top: 7vh;
+}
+
+.d3 {
+  height: 25vh;
+  top: 10.5vh;
+}
+
+@media (min-width: 768px) {
+    .left {
+      left: calc(var(--menu) + 6px);
+    }
 }

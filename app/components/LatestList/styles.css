@@ -36,7 +36,7 @@
   width: calc(var(--circle-size) + 15px);
   height: calc(var(--circle-size) + 15px);
   position: absolute;
-  bottom: calc(var(--circle-size) / 2 - 15px);
+  bottom: calc(var(--circle-size) / 2 - 25px);
   right: -7.5px;
 }
 

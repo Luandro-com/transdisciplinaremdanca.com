@@ -5,7 +5,11 @@
 }
 
 .border {
-  border: 2px solid gold;
+  border: 2px solid transparent;
+  -moz-border-image: -moz-linear-gradient(top left, #FD40DF 0%, #F0AA18 100%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #FD40DF 0%, #F0AA18 100%);
+  border-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+  border-image-slice: 1;
   margin: 2.5%;
   width: 95%;
   height: 95%;

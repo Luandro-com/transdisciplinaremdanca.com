@@ -1,7 +1,20 @@
 .wrapper {
+  width: 70%;
+  height: 40px;
+  background-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+  border-radius: 25px;
+  opacity: 0.85;
+}
 
+.wrapper:hover {
+  opacity: 1;
 }
 
 .container {
-  
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 40px;
+  text-transform: uppercase;
+  font-size: 0.8em;
 }

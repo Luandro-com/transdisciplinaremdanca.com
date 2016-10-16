@@ -13,9 +13,11 @@ import styles from './styles.css';
 
 function Subscribe() {
   return (
-    <div className={styles.subscribe}>
-      <FormattedMessage {...messages.header} />
-      <input />
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <FormattedMessage {...messages.header} />
+        <input />
+      </div>
     </div>
   );
 }

@@ -13,11 +13,11 @@ import styles from './styles.css';
 
 function LatestItem({ title, category, media, created }) {
   return (
-    <div className={styles.wrapper} style={(media.length > 0) ? { background: `url(${media})` } : { background: 'grey' }}>
+    <div className={styles.wrapper} style={(media.length > 0) ? { background: `url(${media})` } : { background: 'rgba(255,255,255,0.25)' }}>
       <div className={styles.border} />
       <div className={styles.info}>
         <h3>{title}</h3>
-        <span>{created}</span>
+        <p>{created}</p>
         <span>{category}</span>
       </div>
     </div>

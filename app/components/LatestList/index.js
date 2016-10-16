@@ -9,6 +9,7 @@ import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import Detail from './detail.svg';
+import Example from './example.jpg'
 
 import Item from 'components/LatestItem';
 import ArrowButton from 'components/ArrowButton';
@@ -40,22 +41,25 @@ LatestList.defaultProps = {
       id: '000',
       title: 'Carregando...',
       category: 'Media',
-      media: '',
+      media: Example,
       created: '',
+      slug: 'item-slug',
     },
     {
       id: '001',
       title: 'Carregando...',
       category: 'Media',
-      media: '',
+      media: Example,
       created: '',
+      slug: 'item-slug',
     },
     {
       id: '002',
       title: 'Carregando...',
       category: 'Media',
-      media: '',
+      media: Example,
       created: '',
+      slug: 'item-slug',
     },
     // {
     //   id: '003',

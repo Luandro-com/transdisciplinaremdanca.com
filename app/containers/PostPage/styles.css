@@ -4,6 +4,6 @@
 
 @media (min-width: 768px) {
     .wrapper {
-      margin-left: 256px;
+      margin: 0 auto;
     }
 }

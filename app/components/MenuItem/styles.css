@@ -1,10 +1,11 @@
 :root {
   --circB: 15px;
   --circS: 5px;
-  --h: 80px;
+  --h: 60px;
 }
 
 .wrapper {
+  margin: 25px 0;
   height: var(--h);
   width: 100%;
   display: flex;
@@ -14,7 +15,7 @@
 }
 
 .box {
-  width: 45%;
+  width: 30%;
   border-top: 2px solid transparent;
   border-bottom: 2px solid transparent;
   border-left: 2px solid transparent;
@@ -24,7 +25,7 @@
 
 .inner {
   position: relative;
-  bottom: -10px;
+  bottom: calc( - var(--h) / 10);
   border-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
   border-image-slice: 1;
 }
@@ -33,7 +34,7 @@
   content: '';
   position: absolute;
   margin: auto;
-  left: 75%;
+  left: 65%;
   width: calc(var(--h) / 1.4);
   height: calc(var(--h) / 1.4);
   transform: rotate(135deg);
@@ -44,7 +45,7 @@
 }
 
 .circs {
-  margin: calc(var(--h) / 3) auto;
+  margin: 15px auto;
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -55,7 +56,7 @@
   border: 1px solid white;
   border-radius: 50%;
   position: relative;
-  right: 20px;
+  right: 16px;
 }
 
 .circB {
@@ -89,7 +90,7 @@
 .text {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  width: 50%;
+  width: 65%;
   display: flex;
   flex-flow: row nowrap;
   align-items: center;

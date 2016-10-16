@@ -16,10 +16,7 @@
 }
 
 .detail {
-  position: absolute;
-  bottom: calc(30vh - var(--circle-size)/2 - 10px);
-  left: calc(50% + 120px);
-  z-index: 1;
+  display: none;
 }
 
 .circle {
@@ -35,9 +32,10 @@
 .circleBorder {
   width: calc(var(--circle-size) + 15px);
   height: calc(var(--circle-size) + 15px);
-  position: absolute;
-  bottom: calc(var(--circle-size) / 2 - 25px);
-  right: -7.5px;
+  margin-bottom: calc( - var(--circle-size));
+  position: relative;
+  bottom: calc(var(--circle-size) * 1.5);
+  right: 8.5px;
 }
 
 @media (min-width: 640px) {
@@ -57,5 +55,14 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
+  }
+  .detail {
+    display: block;
+    width: 80px;
+    position: relative;
+    margin-bottom: -15vh;
+    bottom: calc(var(--circle-size)/2 - 10);
+    left: calc(50% - 60px);
+    z-index: 1;
   }
 }

@@ -15,13 +15,13 @@ import styles from './styles.css';
 function MenuFooter() {
   return (
     <footer className={styles.wrapper}>
-      <FormattedMessage {...messages.header} />
+      <p><FormattedMessage {...messages.header} /></p>
       <div className={styles.imgs}>
         <img src={UfvLogo} alt="Universidade Federal de Viçosa" />
         <img src={UfvLogo} alt="Universidade Federal de Viçosa" />
         <img src={UfvLogo} alt="Universidade Federal de Viçosa" />
       </div>
-      <h4>por Luandro</h4>
+      <a href="http://luandro.com"><h4>por Luandro</h4></a>
     </footer>
   );
 }

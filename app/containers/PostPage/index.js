@@ -10,6 +10,7 @@ import Helmet from 'react-helmet';
 import selectPostPage from './selectors';
 import { FormattedMessage } from 'react-intl';
 import messages from './messages';
+import LatestPosts from 'containers/LatestPosts';
 
 import styles from './styles.css';
 
@@ -24,6 +25,7 @@ export class PostPage extends React.Component { // eslint-disable-line react/pre
           ]}
         />
         <FormattedMessage {...messages.header} />
+        <LatestPosts />
       </div>
     );
   }

@@ -2,14 +2,19 @@
   text-align: center;
 }
 
-.container {
-
-}
-
-.imgs {
-
+.wrapper p {
+  font-weight: 100;
+  border-bottom: 0.5px solid white;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .imgs * {
   padding: 10px 5px;
+}
+
+.wrapper h4 {
+  font-weight: 100;
+  font-size: 0.8em;
+  color: white;
 }

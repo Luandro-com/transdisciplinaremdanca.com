@@ -7,7 +7,7 @@
 
 import React from 'react';
 
-import Decorator from 'components/Decorations';
+import Decorations from 'components/Decorations';
 
 import styles from './styles.css';
 
@@ -20,7 +20,7 @@ class LayoutWrapper extends React.Component { // eslint-disable-line react/prefe
   render() {
     return (
       <div className={styles.wrapper}>
-        <Decorator />
+        <Decorations />
         {React.Children.toArray(this.props.children)}
       </div>
     );

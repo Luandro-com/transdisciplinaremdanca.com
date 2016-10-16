@@ -1,10 +1,14 @@
 .wrapper {
   width: 70%;
   height: 40px;
-  background-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
-  border-radius: 25px;
-  opacity: 0.85;
-  cursor: pointer;
+  margin: 2vh 0 15vh;
+}
+
+.wrapper input {
+  margin: 0 auto;
+  border-bottom: 0.5px solid white;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .wrapper:hover {
@@ -18,8 +22,9 @@
   line-height: 40px;
   text-transform: uppercase;
   font-size: 0.8em;
-}
+  background-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+  border-radius: 25px;
+  opacity: 0.85;
+  cursor: pointer;
 
-.container input {
-  border-bottom: 0.5px solid white;
 }

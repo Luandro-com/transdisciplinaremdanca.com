@@ -14,9 +14,9 @@ import styles from './styles.css';
 function Subscribe() {
   return (
     <div className={styles.wrapper}>
+      <input type="email" />
       <div className={styles.container}>
         <FormattedMessage {...messages.header} />
-        <input type="email" />
       </div>
     </div>
   );

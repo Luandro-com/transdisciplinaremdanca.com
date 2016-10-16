@@ -5,15 +5,16 @@
 */
 
 import React from 'react';
+import { Link } from 'react-router';
 
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 
 import styles from './styles.css';
 
-function MenuItem({ title }) {
+function MenuItem({ title, slug, active }) {
   return (
-    <div className={styles.wrapper}>
+    <Link className={styles.wrapper} to={`/c/${slug}`}>
       <div className={styles.box}>
         <div className={styles.inner}></div>
         <div className={styles.circs}>
@@ -24,15 +25,17 @@ function MenuItem({ title }) {
       </div>
       <div className={styles.text}>
         {title}
-        <div className={styles.active}></div>
+        <div className={active ? styles.active : styles.inactive}></div>
       </div>
       <div className={styles.detail}></div>
-    </div>
+    </Link>
   );
 }
 
 MenuItem.propTypes = {
   title: React.PropTypes.string.isRequired,
+  slug: React.PropTypes.string.isRequired,
+  slug: React.PropTypes.bool,
 };
 
 export default MenuItem;

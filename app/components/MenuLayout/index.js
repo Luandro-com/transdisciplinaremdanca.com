@@ -6,7 +6,7 @@
 */
 
 import React from 'react';
-
+import { Link } from 'react-router';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 
@@ -21,7 +21,14 @@ class MenuLayout extends React.Component { // eslint-disable-line react/prefer-s
 
   static defaultProps = {
     open: (window.screen.width > 767),
-    categories: [{ id: 1, title: 'Início' }],
+    categories: [
+      { id: 1, title: 'Início', slug: '1', active: true },
+      { id: 2, title: 'Categoria 1', slug: '2', active: false },
+      { id: 3, title: 'Categoria 2', slug: '3', active: false },
+      { id: 4, title: 'Categoria 3', slug: '4', active: false },
+      { id: 5, title: 'Categoria 4', slug: '5', active: false },
+      { id: 6, title: 'Contato', slug: '6', active: false },
+    ],
   }
 
   static propTypes = {
@@ -37,7 +44,9 @@ class MenuLayout extends React.Component { // eslint-disable-line react/prefer-s
           style={open ? { display: 'flex' } : { display: 'none' }}
           className={styles.container}
         >
-          <Logo />
+          <Link to="/">
+            <Logo />
+          </Link>
           <List categories={categories} />
           <Subscribe />
           <Footer />

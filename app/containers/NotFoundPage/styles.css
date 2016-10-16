@@ -2,6 +2,12 @@
   width: 100%;
 }
 
+.wrapper h1 {
+  text-align: center;
+  color: white;
+  height: 70vh;
+}
+
 @media (min-width: 768px) {
     .wrapper {
       margin: 0 auto;

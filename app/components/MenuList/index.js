@@ -15,7 +15,7 @@ import styles from './styles.css';
 
 function MenuList({ categories }) {
   return (
-    <div className={styles.menuList}>
+    <div className={styles.wrapper}>
       {(!categories || categories.length < 1) &&
         <Loader color={'pink'} />
       }

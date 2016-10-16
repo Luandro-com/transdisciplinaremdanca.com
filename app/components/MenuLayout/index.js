@@ -21,14 +21,16 @@ class MenuLayout extends React.Component { // eslint-disable-line react/prefer-s
 
   static defaultProps = {
     open: (window.screen.width > 767),
+    categories: [{ id: 1, title: 'Início' }],
   }
 
   static propTypes = {
     open: React.PropTypes.bool,
+    categories: React.PropTypes.arrayOf(React.PropTypes.object),
   }
 
   render() {
-    const { open } = this.props;
+    const { open, categories } = this.props;
     return (
       <div className={styles.wrapper}>
         <div
@@ -36,7 +38,7 @@ class MenuLayout extends React.Component { // eslint-disable-line react/prefer-s
           className={styles.container}
         >
           <Logo />
-          <List />
+          <List categories={categories} />
           <Subscribe />
           <Footer />
         </div>

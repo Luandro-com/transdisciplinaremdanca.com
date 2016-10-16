@@ -1,7 +1,105 @@
-.wrapper {
-
+:root {
+  --circB: 15px;
+  --circS: 5px;
+  --h: 80px;
 }
 
-.container {
-  
+.wrapper {
+  height: var(--h);
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.box {
+  width: 45%;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+  border-image-slice: 1;
+}
+
+.box:hover  .circs{
+  transform: rotate(50deg);
+}
+
+.inner {
+  position: relative;
+  bottom: -10px;
+  border-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+  border-image-slice: 1;
+}
+
+.inner::after {
+  content: '';
+  position: absolute;
+  margin: auto;
+  left: 75%;
+  width: calc(var(--h) / 1.4);
+  height: calc(var(--h) / 1.4);
+  transform: rotate(135deg);
+  border-right: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+  border-image-slice: 1;
+}
+
+.circs {
+  margin: calc(var(--h) / 3) auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.circB, .circS {
+  border: 1px solid white;
+  border-radius: 50%;
+  position: relative;
+  right: 20px;
+}
+
+.circB {
+  width: var(--circB);
+  height: var(--circB);
+}
+
+.circS {
+  width: var(--circS);
+  height: var(--circS);
+  position: relative;
+}
+
+.circS:nth-child(2) {
+  top: 2.5px;
+}
+
+.circS:nth-child(4) {
+  bottom: 2.5px;
+}
+
+.text {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.active {
+  height: 12px;
+  width: 12px;
+  border-radius: 12px;
+  background-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
+}
+
+.detail {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  width: 5%;
 }

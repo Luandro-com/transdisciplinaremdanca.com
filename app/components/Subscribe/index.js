@@ -16,7 +16,7 @@ function Subscribe() {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <FormattedMessage {...messages.header} />
-        <input />
+        <input type="email" />
       </div>
     </div>
   );

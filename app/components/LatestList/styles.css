@@ -1,3 +1,7 @@
+:root {
+  --circle-size: 120px;
+}
+
 .wrapper {
   border-top: 1px solid #757070;
   width: 100%;
@@ -9,6 +13,31 @@
 
 .container {
   margin: auto;
+}
+
+.detail {
+  position: absolute;
+  bottom: calc(30vh - var(--circle-size)/2 - 10px);
+  left: calc(50% + 120px);
+  z-index: 1;
+}
+
+.circle {
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: var(--circle-size);
+  background-color: #000000;
+  background-repeat: repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='10' viewBox='0 0 20 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 6H6v4H4V6H2V4h2V0h2v4h10V0h2v4h2v2h-2v4h-2V6z' fill='%23ffffff' fill-opacity='0.13' fill-rule='evenodd'/%3E%3C/svg%3E");
+  border-top: 2px solid #757070;
+}
+
+.circleBorder {
+  width: calc(var(--circle-size) + 15px);
+  height: calc(var(--circle-size) + 15px);
+  position: absolute;
+  bottom: calc(var(--circle-size) / 2 - 15px);
+  right: -7.5px;
 }
 
 @media (min-width: 640px) {

@@ -16,7 +16,7 @@ const selectMenuDomain = () => state => state.get('menu');
 
 const selectMenu = () => createSelector(
   selectMenuDomain(),
-  (substate) => substate.toJS()
+  (substate) => substate.get('open')
 );
 
 export default selectMenu;

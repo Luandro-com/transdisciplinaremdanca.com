@@ -35,7 +35,6 @@ function MenuItem({ title, slug, active }) {
 MenuItem.propTypes = {
   title: React.PropTypes.string.isRequired,
   slug: React.PropTypes.string.isRequired,
-  slug: React.PropTypes.bool,
 };
 
 export default MenuItem;

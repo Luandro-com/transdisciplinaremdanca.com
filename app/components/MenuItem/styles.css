@@ -68,7 +68,7 @@
   width: var(--circS);
   height: var(--circS);
   position: relative;
-  transition: 1s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 .circS:nth-child(2) {

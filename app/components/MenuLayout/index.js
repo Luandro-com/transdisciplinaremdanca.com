@@ -34,14 +34,17 @@ class MenuLayout extends React.Component { // eslint-disable-line react/prefer-s
   static propTypes = {
     open: React.PropTypes.bool,
     categories: React.PropTypes.arrayOf(React.PropTypes.object),
+    toggleMenu: React.PropTypes.func,
   }
 
   render() {
-    const { open, categories } = this.props;
+    const { open, categories, toggleMenu } = this.props;
+    console.log('OPEN', open);
     return (
       <div className={styles.wrapper}>
+        <button className={styles.toggle} onClick={toggleMenu}>X</button>
         <div
-          style={open ? { display: 'flex' } : { display: 'none' }}
+          style={(!open && screen.width < 768) ? { display: 'none' } : { display: 'flex' }}
           className={styles.container}
         >
           <Link to="/">

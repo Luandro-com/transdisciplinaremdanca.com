@@ -60,9 +60,33 @@
     display: block;
     width: 80px;
     position: relative;
-    margin-bottom: -15vh;
+    margin-bottom: -18vh;
     bottom: calc(var(--circle-size)/2 - 10);
     left: calc(50% - 60px);
     z-index: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .detail {
+    margin-bottom: -15vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .detail {
+    margin-bottom: -18vh;
+  }
+}
+
+@media (min-width: 1440px) {
+  .detail {
+    margin-bottom: -13vh;
+  }
+}
+
+@media (min-width: 1441px) {
+  .detail {
+    margin-bottom: -6vh;
   }
 }

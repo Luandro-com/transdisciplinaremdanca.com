@@ -4,4 +4,4 @@
  *
  */
 
-export const DEFAULT_ACTION = 'app/Menu/DEFAULT_ACTION';
+export const TOGGLE_MENU = 'app/Menu/TOGGLE_MENU';

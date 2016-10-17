@@ -5,9 +5,9 @@
  */
 
 import {
-  DEFAULT_ACTION,
+  TOGGLE_MENU,
 } from './constants';
 
-export function defaultAction() ({
-  type: DEFAULT_ACTION,
+export const toggleMenu = () => ({
+  type: TOGGLE_MENU,
 });

@@ -6,15 +6,18 @@
 
 import { fromJS } from 'immutable';
 import {
-  DEFAULT_ACTION,
+  TOGGLE_MENU,
 } from './constants';
 
-const initialState = fromJS({});
+const initialState = fromJS({
+  open: false,
+});
 
 function menuReducer(state = initialState, action) {
   switch (action.type) {
-    case DEFAULT_ACTION:
-      return state;
+    case TOGGLE_MENU:
+      return state
+      .set('open', !state.get('open'));
     default:
       return state;
   }

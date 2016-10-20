@@ -17,7 +17,7 @@ function MenuItem({ title, slug, active }) {
     <Link className={styles.wrapper} to={`/c/${slug}`}>
       <div className={styles.box}>
         <div className={styles.inner}></div>
-        <div className={styles.circs}>
+        <div className={active ? styles.circActive : styles.circs}>
           <div className={styles.circS}></div>
           <div className={styles.circB}></div>
           <div className={styles.circS}></div>

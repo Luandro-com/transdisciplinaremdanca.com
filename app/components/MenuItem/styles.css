@@ -44,7 +44,7 @@
   border-image-slice: 1;
 }
 
-.circs {
+.circs, .circActive {
   margin: 15px auto;
   display: flex;
   flex-flow: column;
@@ -79,11 +79,11 @@
   bottom: 2.5px;
 }
 
-.wrapper:hover .circS:nth-child(1){
+.wrapper:hover .circS:nth-child(1), .circActive .circS:nth-child(1) {
   transform: rotate(-45deg) translateX(-15px) rotate(45deg);
 }
 
-.wrapper:hover .circS:nth-child(3){
+.wrapper:hover .circS:nth-child(3), .circActive .circS:nth-child(3) {
   transform: rotate(-45deg) translateX(15px) rotate(45deg);
 }
 

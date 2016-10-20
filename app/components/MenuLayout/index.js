@@ -14,6 +14,7 @@ import Logo from 'components/Logo';
 import List from 'components/MenuList';
 import Subscribe from 'components/Subscribe';
 import Footer from 'components/MenuFooter';
+import CloseIcon from 'components/CloseIcon';
 
 import styles from './styles.css';
 
@@ -39,10 +40,12 @@ class MenuLayout extends React.Component { // eslint-disable-line react/prefer-s
 
   render() {
     const { open, categories, toggleMenu } = this.props;
-    console.log('OPEN', open);
+    // console.log('OPEN', open);
     return (
       <div className={styles.wrapper}>
-        <button className={styles.toggle} onClick={toggleMenu}>X</button>
+        <button className={styles.toggle} onClick={toggleMenu}>
+          <CloseIcon />
+        </button>
         <div
           style={(!open && screen.width < 768) ? { display: 'none' } : { display: 'flex' }}
           className={styles.container}

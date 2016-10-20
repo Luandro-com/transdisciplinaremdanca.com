@@ -1,8 +1,10 @@
 .wrapper {
+  height: 340px;
   background: black;
   color: #fff;
-  background: url('./background.jpg');
+  background: url('./background_480.jpg');
   background-size: cover;
+  margin: 0 auto;
 }
 
 .container {
@@ -11,11 +13,14 @@
 
 .logo {
   display: block;
+  text-align: center;
+  padding-top: 80px;
 }
 
 @media (min-width: 768px) {
     .wrapper {
       height: 70vh;
+      background: url('./background.jpg');
     }
     .logo {
       display: none;

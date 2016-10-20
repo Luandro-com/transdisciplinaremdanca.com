@@ -13,6 +13,7 @@ import { Link } from 'react-router';
 import styles from './styles.css';
 
 function LatestItem({ title, category, media, created, slug }) {
+  console.log(media.length > 0);
   return (
     <Link to={`/p/${slug}`} className={styles.wrapper} style={(media.length > 0) ? { background: `url(${media}) no-repeat`, backgroundSize: 'cover' } : { background: 'rgba(255,255,255,0.25)' }}>
       <div className={styles.border} />

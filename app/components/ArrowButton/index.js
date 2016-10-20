@@ -18,8 +18,8 @@ function ArrowButton() {
   );
 }
 
-ArrowButton.propTypes = {
-  data: React.PropTypes.string.isRequired,
-};
+// ArrowButton.propTypes = {
+//   data: React.PropTypes.string.isRequired,
+// };
 
 export default ArrowButton;

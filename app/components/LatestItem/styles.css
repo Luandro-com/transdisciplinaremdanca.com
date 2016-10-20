@@ -7,8 +7,6 @@
 
 .border {
   border: 2px solid transparent;
-  -moz-border-image: -moz-linear-gradient(top left, #FD40DF 0%, #F0AA18 100%);
-  -webkit-border-image: -webkit-linear-gradient(top left, #FD40DF 0%, #F0AA18 100%);
   border-image: linear-gradient(to bottom right, #FD40DF 0%, #F0AA18 100%);
   border-image-slice: 1;
   margin: 2.5%;
@@ -17,7 +15,7 @@
 }
 
 .info {
-  position: relative;
+  color: white;
   top: -50%;
   background: rgba(0,0,0,0.5);
   width: 95%;
@@ -32,6 +30,8 @@
 
 @media (min-width: 768px) {
   .info {
+    color: black;
+    position: relative;
     box-shadow: 2px 2px 4px 4px rgba(0,0,0,0.25);
     background: white;
     width: 80%;

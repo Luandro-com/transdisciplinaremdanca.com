@@ -9,7 +9,7 @@ import React from 'react';
 // import { FormattedMessage } from 'react-intl';
 // import messages from './messages';
 import Detail from './detail.svg';
-import Example from './example.jpg'
+import Example from './example.jpg';
 
 import Item from 'components/LatestItem';
 import ArrowButton from 'components/ArrowButton';
@@ -61,13 +61,14 @@ LatestList.defaultProps = {
       created: '',
       slug: 'item-slug',
     },
-    // {
-    //   id: '003',
-    //   title: 'Carregando...',
-    //   category: 'Media',
-    //   media: '',
-    //   created: '',
-    // },
+    {
+      id: '004',
+      title: 'Carregando...',
+      category: 'Media',
+      media: Example,
+      created: '',
+      slug: 'item-slug',
+    },
   ],
 };
 

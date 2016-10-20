@@ -1,6 +1,6 @@
 /**
 *
-* CloseIcon
+* MenuIcon
 *
 */
 
@@ -9,12 +9,12 @@ import React from 'react';
 
 import styles from './styles.css';
 
-function CloseIcon() {
+function MenuIcon() {
   return <div className={styles.wrapper} />;
 }
 
-CloseIcon.propTypes = {
+MenuIcon.propTypes = {
   data: React.PropTypes.string,
 };
 
-export default CloseIcon;
+export default MenuIcon;

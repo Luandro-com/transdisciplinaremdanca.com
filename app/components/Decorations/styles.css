@@ -30,16 +30,37 @@
 .d1 {
   height: 50vh;
   top: 0;
+  animation-duration: 6s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
 }
 
 .d2 {
   height: 35vh;
   top: 7.5vh;
+  animation-duration: 5s;
+  animation-name: slowbounce;
+  animation-iteration-count: infinite;
 }
 
 .d3 {
   height: 25vh;
   top: 12.5vh;
+  animation-duration: 4s;
+  animation-name: bounce;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slowbounce {
+  0% { top: 0; }
+  50% { top: 50px; }
+  100% { top: 0; }
+}
+
+@keyframes bounce {
+  0% { top: 0; }
+  50% { top: 50px; }
+  100% { top: 0; }
 }
 
 @media (min-width: 768px) {
